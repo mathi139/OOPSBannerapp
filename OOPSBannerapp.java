@@ -1,17 +1,19 @@
-public class OOPSBannerApp {
+public class OOPSBannerapp {
 
     public static void main(String[] args) {
 
-        String banner = String.join("\n",
-            "  ***     ***    ******    *****  ",
-            " **  **   ** **   **   **  **   ** ",
-            "**    ** **   **  **   **  **       ",
-            "**    ** **   **  ******    *****   ",
-            "**    ** **   **  **              **",
-            " **  **   ** **   **        **    **",
-            "  ***       ***    **         *****  "
-        );
+        String[] banner = {
+            "   ***       ***     ******      *****   ",
+            "  **   **   **   **   **    **    **   ** ",
+            " **     ** **     **  **     **   **       ",
+            " **     ** **     **  ******       *****    ",
+            " **     ** **     **  **                **  ",
+            "  **   **   **   **   **          **    **  ",
+            "   ***       ***      **            *****    "
+        };
 
-        System.out.println(banner);
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
